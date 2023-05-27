@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Viewport meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="Cric_Web.css">
+
+    <!-- JS File -->
+    <script defer src="Cric_Web.js"></script>
+
+    <Noscript> Please Enable JavaScript ! </Noscript>
+
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Luckiest+Guy&family=Peralta&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+
+    <!-- Fav Icon Link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/favicon_package_v0.16/apple-touch-icon.png" type="image/jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon_package_v0.16/favicon-32x32.png" type="image/jpeg">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon_package_v0.16/favicon-16x16.png" type="image/jpeg">
+    <link rel="manifest" href="Favicon/favicon_package_v0.16/site.webmanifest" type="image/jpeg">
+    <link rel="mask-icon" href="Favicon/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5" type="image/jpeg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- font awesome icons kit -->
+    <script src="https://kit.fontawesome.com/9dec450bb1.js" crossorigin="anonymous"></script>
+
+    <!-- title -->
+    <title> Cric Stats </title>
+
+    <!-- meta tag about description of website -->
+    <meta name="description" content="All about cricketer stats of team Pakistan. Check it out the players stats in this website.">
+
+    <!-- keywords for SEO -->
+    <meta name="keywords" content="cricketers, stats, records, team, Pakistan, cricket, players, team Pakistan">
+
+    <!-- Twitter Card Tag -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gamedevdotcom" />
+    <meta name="twitter:title" content="Cric Stats" />
+    <meta name="twitter:description" content="All about cricketer stats of team Pakistan. Check it out the players stats in this website." />
+    <meta name="twitter:image" content="http://www.cricstats.io/Images/Logo.jpg" />
+
+    <!-- Facebook Open Graph Tag -->
+    <meta property="og:url" content="http://www.cricstats.io/Cric_Web.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Cric Stats" />
+    <meta property="og:description" content="All about cricketer stats of team Pakistan. Check it out the players stats in this website." />
+    <meta property="og:image" content="http://www.cricstats.io/Images/Logo.jpg" />
+
+</head>
+<body>
+    <div class="main-div">
+
+        <!-- div for logo image and h1 heading -->
+        <div class="h1-img-div">
+                <img src="./Images/Logo.jpg" alt="Logo.jpeg" id="logo_img"> <h1 class="h1"> Cric_Stats </h1>
+        </div>
+         
+        <!-- div for navbar -->
+        <div class="navbar-div">
+            <a class="navbars" href="#about-us"> About US </a>
+            <a class="navbars" href="#contact-us"> Contact US </a>
+        </div>
+
+        <!-- side bar for players name div -->
+        <div class="players-name-div">
+
+            
+            <h2 class="players-name-heading hide"> Team Pakistan </h2>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('Babar Azam (C)', 0)"> Babar Azam (C) </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('M.Rizwan (WK)', 1)"> M.Rizwan (WK) </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('Fakhar Zaman', 2)"> Fakhar Zaman </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('Iftikhar Ahmed', 3)"> Iftikhar Ahmed </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('Imad Wasim', 4)"> Imad Wasim </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('M.Haris', 5)"> M.Haris (WK) </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('M.Nawaz', 6)"> M.Nawaz </div>
+            <br> <br>
+            <div  class="players-name hide" onclick="call_player('Shadab Khan (VC)', 7)"> Shadab Khan (VC) </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('Naseem Shah', 8)"> Naseem Shah </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('Haris Rauf', 9)"> Haris Rauf </div>
+            <br> <br>
+            <div class="players-name hide" onclick="call_player('Shaheen Shah Afridi', 10)"> Shaheen Shah Afridi </div>
+            <br> <br>
+
+        </div>
+
+        <!-- stats table -->
+
+        <div class="stats-main-div" id="stats">
+
+        <div class="cancel-icon"> <i class="fa-solid fa-xmark" onclick="cross()"></i> </div>
+
+                     <!-- Table for batting stats  -->
+
+        <dl class="player"> <dt class="player-name"> Babar Azam </dt>  <dd> ~ Batting Stats </dd> </dl>
+
+        <table class="stats-table">
+
+            <tr class="table-rows">
+                <th class="table-heading"> Format </th>
+                <th class="table-heading"> Mat </th>
+                <th class="table-heading"> Inns </th>
+                <th class="table-heading"> NO </th>
+                <th class="table-heading"> Runs </th>
+                <th class="table-heading"> HS </th>
+                <th class="table-heading"> Avg </th>
+                <th class="table-heading"> BF </th>
+                <th class="table-heading"> SR </th>
+                <th class="table-heading"> 100s </th>
+                <th class="table-heading"> 50s </th>
+                <th class="table-heading"> 4s </th>
+                <th class="table-heading"> 6s </th>
+                <th class="table-heading"> CT </th>
+            </tr>
+
+            <tr class="table-rows">
+                <td class="table-data css-for-all-formats"> Test </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data bold"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+                 <td class="table-data"> - </td>
+            </tr>
+
+            <tr class="table-rows">
+                <td class="table-data css-for-all-formats"> ODI </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data bold"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+            </tr>
+
+            <tr class="table-rows">
+                <td class="table-data css-for-all-formats"> T20I </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data bold"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+            </tr>
+
+            <tr class="table-rows">
+                <td class="table-data css-for-all-formats"> FC </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data bold"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+            </tr>
+
+            <tr class="table-rows">
+                <td class="table-data css-for-all-formats"> List A </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data bold"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+            </tr>
+
+            <tr class="table-rows">
+                <td class="table-data css-for-all-formats"> T20 </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data bold"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+                <td class="table-data"> - </td>
+            </tr>
+
+        </table>
+
+
+
+                     <!-- Table for bowling stats -->
+
+                     <dl class="player"> <dt class="player-name"> Babar Azam </dt>  <dd> ~ Bowling Stats </dd> </dl>
+
+                     <table class="stats-table">
+             
+                         <tr class="table-rows">
+                             <th class="table-heading"> Format </th>
+                             <th class="table-heading"> Mat </th>
+                             <th class="table-heading"> Inns </th>
+                             <th class="table-heading"> Balls </th>
+                             <th class="table-heading"> Runs </th>
+                             <th class="table-heading"> Wkts </th>
+                             <th class="table-heading"> BBI </th>
+                             <th class="table-heading"> BBM </th>
+                             <th class="table-heading"> Avg </th>
+                             <th class="table-heading"> Econ </th>
+                             <th class="table-heading"> SR </th>
+                             <th class="table-heading"> 4w </th>
+                             <th class="table-heading"> 5w </th>
+                             <th class="table-heading"> 10w </th>
+                         </tr>
+             
+                         <tr class="table-rows">
+                             <td class="table-data css-for-all-formats"> Test </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data bold"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                              <td class="table-data"> - </td>
+                         </tr>
+             
+                         <tr class="table-rows">
+                             <td class="table-data css-for-all-formats"> ODI </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data bold"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                         </tr>
+             
+                         <tr class="table-rows">
+                             <td class="table-data css-for-all-formats"> T20I </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data bold"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                         </tr>
+             
+                         <tr class="table-rows">
+                             <td class="table-data css-for-all-formats"> FC </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data bold"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                         </tr>
+             
+                         <tr class="table-rows">
+                             <td class="table-data css-for-all-formats"> List A </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data bold"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                         </tr>
+             
+                         <tr class="table-rows">
+                             <td class="table-data css-for-all-formats"> T20 </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data bold"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                             <td class="table-data"> - </td>
+                         </tr>
+             
+                     </table>
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="aboutus" id="about-us"> 
+            <h3> About US </h3>
+            <br>
+            <p> The cricket stats website is a powerhouse of sorts, providing stats for every single match ever played between countries. There is every player stats of Pakistan team It is our site there is social links given for further queries or about any issue contact us. </p>
+        </div>
+
+        <div class="contactus" id="contact-us"> 
+            <h3> Contact US </h3>
+            <br> 
+               <a target="_blank" href="https://www.facebook.com/profile.php?id=100068943230031" class="facebook"> <i class="fa-brands fa-facebook-f"> </i> <span class="span-facebook"> Facebook </span> </a>
+               <a target="_blank" href="https://www.instagram.com/code.alert89442/" class="instagram"> <i class="fa-brands fa-instagram">  </i> <span class="span-instagram"> Instagram </span> </a>
+               <a target="_blank" href="https://twitter.com/gamedevdotcom" class="twitter"> <i class="fa-brands fa-twitter">  </i> <span class="span-twitter"> Twitter </span> </a>
+               <a target="_blank" href="mailto:contactus60@gmail.com?subject=Mail from the user" class="gmail"> <i class="fa-regular fa-envelope"> </i> <span class="span-gmail"> Gmail </span> </a>
+               <a target="_blank" href="https://login.yahoo.com/myaccount/personalinfo/?src=homepage&activity=ybar-acctinfo&pspid=2023538075&.done=https%3A%2F%2Fwww.yahoo.com%2F&.scrumb=o3sXHLy7V96" class="yahoo"> <i class="fa-brands fa-yahoo">  </i> <span class="span-yahoo"> Yahoo Mail </span> </a>
+        </div>
+        
+    </footer>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
